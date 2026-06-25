@@ -1,0 +1,43 @@
+/* Explicit Dark Mode overrides for premium styling */
+
+[data-theme="dark"] body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Glassmorphic backdrop filter styling adjustments for Dark Mode */
+[data-theme="dark"] header {
+  background-color: rgba(13, 13, 13, 0.85);
+  border-bottom: 1px solid #1A1A1A;
+}
+
+[data-theme="dark"] .mega-menu {
+  background-color: #121212;
+  border-bottom: 1px solid #222222;
+}
+
+[data-theme="dark"] .kpi-card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .btn-solid:hover {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+}
+
+/* Review stars glowing gold in dark mode */
+[data-theme="dark"] .stars {
+  color: var(--color-gold);
+  text-shadow: 0 0 8px rgba(197, 168, 128, 0.4);
+}
+
+/* Scrollbar adjustment for dark mode */
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+
+/* Input selections highlighting in dark theme */
+[data-theme="dark"] input:-webkit-autofill {
+  -webkit-text-fill-color: var(--text-primary) !important;
+  -webkit-box-shadow: 0 0 0 30px #141414 inset !important;
+}

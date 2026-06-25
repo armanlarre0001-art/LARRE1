@@ -1,0 +1,9 @@
+{
+  "p1": [
+    { "name": "Suresh M.", "rating": 5, "date": "2026-06-15", "text": "Exceptional quality. True to fit. The fabric feels amazing." },
+    { "name": "Devansh K.", "rating": 4, "date": "2026-06-10", "text": "Elegant and minimal shirt. The gold collar button is a stellar design touch." }
+  ],
+  "p2": [
+    { "name": "Rajiv R.", "rating": 5, "date": "2026-06-18", "text": "Beautiful drape and fabric feel. Absolutely premium blazer." }
+  ]
+}

@@ -1,0 +1,568 @@
+[
+  {
+    "id": "p1",
+    "name": "PRIMA TEXTURED SHIRT",
+    "category": "Men",
+    "subcategory": "Shirts",
+    "price": 3450,
+    "originalPrice": 4200,
+    "rating": 4.8,
+    "reviewsCount": 24,
+    "colors": [
+      {
+        "name": "Ecru",
+        "value": "#F5F2EB",
+        "images": [
+          "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1621072156002-e2fcc10d7967?auto=format&fit=crop&q=80&w=800"
+        ]
+      },
+      {
+        "name": "Sage",
+        "value": "#8F9779",
+        "images": [
+          "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&w=800"
+        ]
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Tailored from ultra-premium long-staple cotton, the Prima Textured Shirt exhibits a subtle herringbone weave that catches light beautifully. Cut in our signature modern slim silhouette, it delivers an impeccably clean and luxurious presentation.",
+    "specifications": [
+      "100% Giza Cotton with Herringbone weave",
+      "Semi-spread luxury collar",
+      "Signature single gold-threaded button at collar cuff",
+      "Gently curved hemline for untucked versatility"
+    ],
+    "featured": true,
+    "stock": 12,
+    "newArrival": true,
+    "sale": false
+  },
+  {
+    "id": "p2",
+    "name": "MONARCH WOOL BLAZER",
+    "category": "Men",
+    "subcategory": "Jackets",
+    "price": 12900,
+    "originalPrice": 15500,
+    "rating": 4.9,
+    "reviewsCount": 16,
+    "colors": [
+      {
+        "name": "Charcoal",
+        "value": "#363636",
+        "images": [
+          "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&q=80&w=800"
+        ]
+      },
+      {
+        "name": "Navy Blue",
+        "value": "#1D2A44",
+        "images": [
+          "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1598808503742-c840040c2b5d?auto=format&fit=crop&q=80&w=800"
+        ]
+      }
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "An exceptional unstructured blazer crafted from a refined merino wool blend. Perfect for transition seasons, the Monarch Blazer offers soft shoulder construction and modern patch pockets to fuse bespoke elegance with relaxed luxury styling.",
+    "specifications": [
+      "70% Merino Wool, 30% Mulberry Silk",
+      "Unlined back for maximum drape and breathability",
+      "Brushed gold buttons along the front and cuffs",
+      "Double back vents for comfort of movement"
+    ],
+    "featured": true,
+    "stock": 5,
+    "newArrival": true,
+    "sale": false
+  },
+  {
+    "id": "p3",
+    "name": "NOIR KNIT POLO",
+    "category": "Men",
+    "subcategory": "Shirts",
+    "price": 2850,
+    "originalPrice": 2850,
+    "rating": 4.7,
+    "reviewsCount": 38,
+    "colors": [
+      {
+        "name": "Obsidian Black",
+        "value": "#1A1A1A",
+        "images": [
+          "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?auto=format&fit=crop&q=80&w=800"
+        ]
+      },
+      {
+        "name": "Burgundy",
+        "value": "#5B1425",
+        "images": [
+          "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&q=80&w=800"
+        ]
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Elevating the classic sportswear staple. Knitted from incredibly soft mercerized cotton, this polo features a buttonless resort collar, fine ribbed cuffs, and a tailored hem. An item that exudes understated sophistication.",
+    "specifications": [
+      "100% Mercerized Cotton",
+      "Retro buttonless open-neck collar",
+      "Extremely breathable knit design",
+      "Tailored fit with ribbed armbands"
+    ],
+    "featured": false,
+    "stock": 18,
+    "newArrival": false,
+    "sale": false
+  },
+  {
+    "id": "p4",
+    "name": "SATIN SLIM TROUSER",
+    "category": "Men",
+    "subcategory": "Trousers",
+    "price": 3890,
+    "originalPrice": 4800,
+    "rating": 4.6,
+    "reviewsCount": 19,
+    "colors": [
+      {
+        "name": "Ecru",
+        "value": "#EAE6DF",
+        "images": [
+          "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&q=80&w=800"
+        ]
+      },
+      {
+        "name": "Sage Green",
+        "value": "#7F8E80",
+        "images": [
+          "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&q=80&w=800"
+        ]
+      }
+    ],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "description": "A luxury flat-front chino trouser designed with a premium satin finish that provides a sleek look and a luxurious touch. The stretch-infusion guarantees unrestricted comfort while maintaining a sharp drape.",
+    "specifications": [
+      "97% Cotton, 3% Elastane stretch satin",
+      "Premium branded internal waistband stabilizer",
+      "Hidden watch pocket and double-welt back pockets",
+      "YKK zip closure with triple-anchor button closure"
+    ],
+    "featured": true,
+    "stock": 15,
+    "newArrival": false,
+    "sale": true
+  },
+  {
+    "id": "p5",
+    "name": "LUMIERE SILK SHIRT",
+    "category": "Women",
+    "subcategory": "Shirts",
+    "price": 6900,
+    "originalPrice": 8500,
+    "rating": 4.9,
+    "reviewsCount": 12,
+    "colors": [
+      {
+        "name": "Soft Cream",
+        "value": "#FFFDF9",
+        "images": [
+          "https://images.unsplash.com/photo-1548624149-f7b31668831a?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&q=80&w=800"
+        ]
+      },
+      {
+        "name": "Champagne",
+        "value": "#E9D2B5",
+        "images": [
+          "https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&q=80&w=800"
+        ]
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "A fluid silk-crepe blouse that drapes spectacularly, giving an instantly rich and polished feel. Features structured cuffs, dynamic French seams, and customized natural mother-of-pearl buttons.",
+    "specifications": [
+      "100% Mulberry Silk Crepe-de-Chine",
+      "Classic pointed collar and clean hidden button placket",
+      "Extra wide double cuffs with dual buttonholes for cufflinks",
+      "Dry clean recommended to preserve elegant sheen"
+    ],
+    "featured": true,
+    "stock": 4,
+    "newArrival": true,
+    "sale": false
+  },
+  {
+    "id": "p6",
+    "name": "AURELIA RIBBED DRESS",
+    "category": "Women",
+    "subcategory": "Dresses",
+    "price": 5200,
+    "originalPrice": 6500,
+    "rating": 4.8,
+    "reviewsCount": 31,
+    "colors": [
+      {
+        "name": "Obsidian Black",
+        "value": "#1A1A1A",
+        "images": [
+          "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=800"
+        ]
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "A midi-length, body-contouring dress in a premium heavyweight rib-knit. The elegant square neckline and low-back detail make it an extremely versatile wardrobe essential for cocktail evenings or upscale day events.",
+    "specifications": [
+      "80% Viscose, 20% Nylon stretch rib-knit",
+      "Structured square neck and wide shoulder support straps",
+      "Elegant lateral side slit for ease of movement",
+      "Double-layered bust for compression and clean lines"
+    ],
+    "featured": true,
+    "stock": 8,
+    "newArrival": false,
+    "sale": true
+  },
+  {
+    "id": "p7",
+    "name": "SIGNATURE LEATHER DUFFLE",
+    "category": "Accessories",
+    "subcategory": "Bags",
+    "price": 14500,
+    "originalPrice": 14500,
+    "rating": 5.0,
+    "reviewsCount": 8,
+    "colors": [
+      {
+        "name": "Vintage Tan",
+        "value": "#8B5A2B",
+        "images": [
+          "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1547949003-9792a18a2601?auto=format&fit=crop&q=80&w=800"
+        ]
+      }
+    ],
+    "sizes": [
+      "O/S"
+    ],
+    "description": "The ultimate travel companion. Crafted from full-grain vegetable-tanned leather, this duffle bag develops a gorgeous individual patina over time. Finished with heavy-duty solid brass hardware and a protective padded base.",
+    "specifications": [
+      "Premium Full-Grain Vegetable-Tanned Leather",
+      "Robust YKK metal zippers in brushed gold",
+      "Detachable padded leather shoulder strap",
+      "Spacious canvas-lined interior with zipped organizer pockets"
+    ],
+    "featured": false,
+    "stock": 3,
+    "newArrival": true,
+    "sale": false
+  },
+  {
+    "id": "p8",
+    "name": "MAJESTIC CHRONO GOLD WATCH",
+    "category": "Accessories",
+    "subcategory": "Watches",
+    "price": 18900,
+    "originalPrice": 22000,
+    "rating": 4.9,
+    "reviewsCount": 15,
+    "colors": [
+      {
+        "name": "Chrono Gold",
+        "value": "#D4AF37",
+        "images": [
+          "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&q=80&w=800",
+          "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&q=80&w=800"
+        ]
+      }
+    ],
+    "sizes": [
+      "O/S"
+    ],
+    "description": "A luxury statement timepiece. Featuring a brushed stainless steel case plated in 18K gold, a matte black dial with sub-dials, and automatic Swiss movement. Fits seamlessly under premium double cuff shirts.",
+    "specifications": [
+      "18K Gold plated stainless steel 41mm case",
+      "Scratch-resistant sapphire crystal glass",
+      "Automatic movement with 42-hour power reserve",
+      "Water resistant up to 50 meters (5 ATM)"
+    ],
+    "featured": true,
+    "stock": 2,
+    "newArrival": false,
+    "sale": true
+  },
+  {
+    "id": "p9",
+    "name": "ITALIAN LINEN RESORT SHIRT",
+    "category": "Men",
+    "subcategory": "Shirts",
+    "price": 3600,
+    "originalPrice": 4500,
+    "rating": 4.7,
+    "reviewsCount": 14,
+    "colors": [
+      {
+        "name": "Sage",
+        "value": "#8F9779",
+        "images": [
+          "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&q=80&w=800"
+        ]
+      },
+      {
+        "name": "Sand",
+        "value": "#D2B48C",
+        "images": [
+          "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&q=80&w=800"
+        ]
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Crafted from 100% organic Italian flax linen, this shirt features a comfortable camp collar, short sleeves, and a premium relaxed fit ideal for warm summer escapes.",
+    "specifications": [
+      "100% Organic Italian Flax Linen",
+      "Relaxed camp/resort collar",
+      "Breathable airy linen weave",
+      "Curved hem with lateral slits"
+    ],
+    "featured": true,
+    "stock": 9,
+    "newArrival": true,
+    "sale": true
+  },
+  {
+    "id": "p10",
+    "name": "STRUCTURED CLUB BLAZER",
+    "category": "Men",
+    "subcategory": "Jackets",
+    "price": 11500,
+    "originalPrice": 13500,
+    "rating": 4.8,
+    "reviewsCount": 9,
+    "colors": [
+      {
+        "name": "Olive Green",
+        "value": "#556B2F",
+        "images": [
+          "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800"
+        ]
+      }
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "An elegant structured club blazer meticulously crafted from a fine wool and cashmere blend. Designed with a custom notched lapel and soft interior shoulder pads for an assertive, sharp appearance.",
+    "specifications": [
+      "80% Wool, 20% Cashmere blend",
+      "Notched luxury lapel and signature buttons",
+      "Double vents for high comfort",
+      "Two interior storage chest pockets"
+    ],
+    "featured": false,
+    "stock": 4,
+    "newArrival": true,
+    "sale": false
+  },
+  {
+    "id": "p11",
+    "name": "CHELSEA LEATHER BOOT",
+    "category": "Men",
+    "subcategory": "Shoes",
+    "price": 8900,
+    "originalPrice": 8900,
+    "rating": 4.9,
+    "reviewsCount": 11,
+    "colors": [
+      {
+        "name": "Vintage Tan",
+        "value": "#8B5A2B",
+        "images": [
+          "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800"
+        ]
+      },
+      {
+        "name": "Obsidian Black",
+        "value": "#1A1A1A",
+        "images": [
+          "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&q=80&w=800"
+        ]
+      }
+    ],
+    "sizes": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "description": "Handcrafted Chelsea boots built with premium full-grain Italian leather, elasticated side panels, and a cushioned leather footbed for outstanding daily wear comfort.",
+    "specifications": [
+      "Full-grain calfskin leather upper",
+      "Flexible elasticated lateral side gussets",
+      "Custom stacked leather heels with rubber base",
+      "Pull tabs at the cuffs for easy insertion"
+    ],
+    "featured": true,
+    "stock": 6,
+    "newArrival": true,
+    "sale": false
+  },
+  {
+    "id": "p12",
+    "name": "ARIA SATIN WRAP SKIRT",
+    "category": "Women",
+    "subcategory": "Skirts",
+    "price": 4200,
+    "originalPrice": 4200,
+    "rating": 4.6,
+    "reviewsCount": 15,
+    "colors": [
+      {
+        "name": "Emerald Green",
+        "value": "#0F52BA",
+        "images": [
+          "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&q=80&w=800"
+        ]
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "A fluid midi-length wrap skirt made from premium heavy satin. Ties elegantly at the waist for an adjustable fit, falling into a soft asymmetrical drape.",
+    "specifications": [
+      "100% Premium Heavy Satin",
+      "Adjustable lateral wrap tie closure",
+      "Elegant asymmetrical fluid hemline",
+      "Anti-static luxury lining"
+    ],
+    "featured": false,
+    "stock": 11,
+    "newArrival": true,
+    "sale": false
+  },
+  {
+    "id": "p13",
+    "name": "BREEZE COTTON DAYDRESS",
+    "category": "Women",
+    "subcategory": "Dresses",
+    "price": 5800,
+    "originalPrice": 6800,
+    "rating": 4.8,
+    "reviewsCount": 20,
+    "colors": [
+      {
+        "name": "Cream",
+        "value": "#FFFDF9",
+        "images": [
+          "https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?auto=format&fit=crop&q=80&w=800"
+        ]
+      },
+      {
+        "name": "Soft Pink",
+        "value": "#FFC0CB",
+        "images": [
+          "https://images.unsplash.com/photo-1548624149-f7b31668831a?auto=format&fit=crop&q=80&w=800"
+        ]
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "An airy daydress tailored from soft textured cotton weave. Styled with a dynamic tiered midi skirt and a square neckline, it balances casual ease with elevated luxury.",
+    "specifications": [
+      "100% Textured Organic Cotton",
+      "Structured square neckline",
+      "Flattering tiered midi skirt design",
+      "Concealed back YKK zip closure"
+    ],
+    "featured": true,
+    "stock": 7,
+    "newArrival": true,
+    "sale": true
+  },
+  {
+    "id": "p14",
+    "name": "ASCOT CASHMERE SCARF",
+    "category": "Accessories",
+    "subcategory": "Scarves",
+    "price": 6500,
+    "originalPrice": 7500,
+    "rating": 5.0,
+    "reviewsCount": 18,
+    "colors": [
+      {
+        "name": "Camel",
+        "value": "#C19A6B",
+        "images": [
+          "https://images.unsplash.com/photo-1547949003-9792a18a2601?auto=format&fit=crop&q=80&w=800"
+        ]
+      }
+    ],
+    "sizes": [
+      "O/S"
+    ],
+    "description": "An incredibly soft scarf woven from 100% premium Mongolian cashmere. Finished with delicate hand-rolled fringe trims, it offers warm protection and signature luxury style.",
+    "specifications": [
+      "100% Pure Mongolian Cashmere",
+      "Woven herringbone weave pattern",
+      "Elegant hand-rolled fringe trims",
+      "Dimension: 180cm x 30cm size"
+    ],
+    "featured": true,
+    "stock": 5,
+    "newArrival": true,
+    "sale": true
+  }
+]

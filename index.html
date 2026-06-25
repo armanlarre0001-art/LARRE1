@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LARRE | Premium Luxury Fashion Store</title>
+  
+  <!-- Remix Icons Stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/dark-mode.css">
+
+  <!-- Immediate Theme Initialization Script to Prevent Flash -->
+  <script>
+    const savedTheme = localStorage.getItem("larre_theme") || "light";
+    document.documentElement.setAttribute("data-theme", savedTheme);
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header>
+    <div class="container header-container">
+      <!-- Mobile Menu Icon (Hamburger) -->
+      <button class="header-btn nav-menu-mobile-btn" style="display: none;" onclick="showToast('Mobile menu toggle')">
+        <i class="ri-menu-line"></i>
+      </button>
+
+      <!-- Editorial Logo -->
+      <a href="#home" onclick="navigateTo('home')" class="logo">LA<span>RRE</span></a>
+
+      <!-- Mega Menu Navigation Bar -->
+      <nav class="nav-menu">
+        <a href="#home" onclick="navigateTo('home')" class="nav-link">Home</a>
+        
+        <!-- Category Men with Mega Menu -->
+        <div class="nav-link nav-item-mega">
+          Men
+          <div class="mega-menu">
+            <div class="container mega-menu-grid">
+              <div class="mega-menu-column">
+                <h3>CLOTHING</h3>
+                <ul>
+                  <li><a href="#shop" onclick="applyNavbarCategoryFilter('Men')">Linen Shirts</a></li>
+                  <li><a href="#shop" onclick="applyNavbarCategoryFilter('Men')">Textured Shirts</a></li>
+                  <li><a href="#shop" onclick="applyNavbarCategoryFilter('Men')">Premium Polo Tees</a></li>
+                  <li><a href="#shop" onclick="applyNavbarCategoryFilter('Men')">Satin Trousers</a></li>
+                  <li><a href="#shop" onclick="applyNavbarCategoryFilter('Men')">Merino Blazers</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-column">
+                <h3>COLLECTIONS</h3>
+                <ul>
+                  <li><a href="#shop" onclick="navigateTo('shop')">New Arrivals</a></li>
+                  <li><a href="#shop" onclick="navigateTo('shop')">Summer Editorial</a></li>
+                  <li><a href="#shop" onclick="navigateTo('shop')">Premium Essentials</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-column">
+                <h3>ACCESSORIES</h3>
+                <ul>
+                  <li><a href="#shop" onclick="applyNavbarCategoryFilter('Accessories')">Luxury Leather Bags</a></li>
+                  <li><a href="#shop" onclick="applyNavbarCategoryFilter('Accessories')">Swiss Movement Timepieces</a></li>
+                  <li><a href="#shop" onclick="applyNavbarCategoryFilter('Accessories')">Premium Belts</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-column">
+                <h3>DISCOUNTS</h3>
+                <ul>
+                  <li><a href="#shop" onclick="navigateTo('shop')" style="color: var(--color-gold);">Up to 40% Off Sale</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-banner">
+                <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&w=800" alt="Larre Men Collection">
+                <div class="mega-menu-banner-content">
+                  <h4 style="font-family: var(--font-serif); font-size: 1.25rem; text-transform: uppercase;">The Modern Man</h4>
+                  <a href="#shop" onclick="navigateTo('shop')" style="font-size: 0.7rem; letter-spacing: 0.1em; color: var(--color-gold); text-transform: uppercase; font-weight: 500;">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Women with Mega Menu -->
+        <div class="nav-link nav-item-mega">
+          Women
+          <div class="mega-menu">
+            <div class="container mega-menu-grid">
+              <div class="mega-menu-column">
+                <h3>CLOTHING</h3>
+                <ul>
+                  <li><a href="#shop" onclick="applyNavbarCategoryFilter('Women')">Mulberry Silk Shirts</a></li>
+                  <li><a href="#shop" onclick="applyNavbarCategoryFilter('Women')">Ribbed Knit Dresses</a></li>
+                  <li><a href="#shop" onclick="applyNavbarCategoryFilter('Women')">Linen Co-ord Sets</a></li>
+                  <li><a href="#shop" onclick="applyNavbarCategoryFilter('Women')">Premium Tops</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-column">
+                <h3>COLLECTIONS</h3>
+                <ul>
+                  <li><a href="#shop" onclick="navigateTo('shop')">Lumiere Editorial</a></li>
+                  <li><a href="#shop" onclick="navigateTo('shop')">Minimalist Luxury</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-column">
+                <h3>ACCESSORIES</h3>
+                <ul>
+                  <li><a href="#shop" onclick="applyNavbarCategoryFilter('Accessories')">Luxury Wallets</a></li>
+                  <li><a href="#shop" onclick="applyNavbarCategoryFilter('Accessories')">Fine Jewellery</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-column">
+                <h3>CAMPAIGNS</h3>
+                <ul>
+                  <li><a href="#shop" onclick="navigateTo('shop')">Spring-Summer '26</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-banner">
+                <img src="https://images.unsplash.com/photo-1548624149-f7b31668831a?auto=format&fit=crop&q=80&w=800" alt="Larre Women Collection">
+                <div class="mega-menu-banner-content">
+                  <h4 style="font-family: var(--font-serif); font-size: 1.25rem; text-transform: uppercase;">Mulberry Silk</h4>
+                  <a href="#shop" onclick="navigateTo('shop')" style="font-size: 0.7rem; letter-spacing: 0.1em; color: var(--color-gold); text-transform: uppercase; font-weight: 500;">Explore Blouses</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#shop" onclick="navigateTo('shop')" class="nav-link">Shop</a>
+        <a href="#admin" onclick="navigateTo('admin')" class="nav-link" style="color: var(--color-gold); font-weight: 600;">Admin Area</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <!-- Search Trigger -->
+        <button class="header-btn" onclick="toggleSearchOverlay()" title="Search Products">
+          <i class="ri-search-line"></i>
+        </button>
+
+        <!-- Dark/Light Theme Toggle -->
+        <button class="header-btn" id="theme-toggle" title="Toggle Theme">
+          <i class="ri-moon-line" id="theme-toggle-icon"></i>
+        </button>
+
+        <!-- User Profile -->
+        <button class="header-btn" id="auth-header-btn" onclick="openModal('auth-modal')" title="Login / Register">
+          <i class="ri-user-line"></i>
+        </button>
+
+        <!-- Wishlist -->
+        <button class="header-btn" onclick="openDrawer('wishlist-drawer')" title="Wishlist">
+          <i class="ri-heart-line"></i>
+          <span class="badge-count wishlist-count-badge hidden">0</span>
+        </button>
+
+        <!-- Cart Bag -->
+        <button class="header-btn" onclick="openDrawer('cart-drawer')" title="Shopping Bag">
+          <i class="ri-shopping-bag-line"></i>
+          <span class="badge-count cart-count-badge hidden">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick Search Dropdown Row -->
+    <div id="search-row-dropdown" class="hidden" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 1rem 0;">
+      <div class="container" style="position: relative;">
+        <div style="display: flex; align-items: center; border-bottom: 1px solid var(--color-gold); padding: 0.5rem 0;">
+          <input type="text" id="search-input-header" placeholder="Search premium shirts, wool blazers, silk dresses..." style="flex-grow: 1; padding: 0.5rem 0; font-size: 1rem;">
+          <button class="header-btn" onclick="closeSearchOverlay()" style="font-size: 1rem;"><i class="ri-close-line"></i></button>
+        </div>
+        <!-- Live Autocomplete results container -->
+        <div id="search-results-overlay" class="hidden" style="position: absolute; top: 100%; left: 4rem; right: 4rem; background-color: var(--bg-secondary); box-shadow: var(--shadow-lg); z-index: 1001; max-height: 350px; overflow-y: auto; border: 1px solid var(--border-color); border-top: none;"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       DYNAMIC VIEW: HOMEPAGE (#home)
+       ========================================== -->
+  <main id="view-home">
+    <!-- Parallax Luxury Hero Section -->
+    <section class="hero-section">
+      <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=1920');"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h3 class="hero-subtitle animate-fade-in-up">The Spring-Summer Editorial</h3>
+        <h1 class="hero-title animate-fade-in-up" style="animation-delay: 0.2s;">Bespoke Luxury. Minimal Design.</h1>
+        <p class="hero-desc animate-fade-in-up" style="animation-delay: 0.4s;">Impeccable textures, fine Italian linens, and modern unstructured blazers tailored for the sophisticated modern wardrobe.</p>
+        <button class="btn btn-solid animate-fade-in-up" style="animation-delay: 0.6s;" onclick="navigateTo('shop')">Explore Collection</button>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- Staggered Editorial Categories -->
+      <section class="promo-grid">
+        <div class="promo-card">
+          <img src="https://images.unsplash.com/photo-1620012253295-c05518e99309?auto=format&fit=crop&q=80&w=800" alt="Larre Shirts">
+          <div class="promo-card-overlay"></div>
+          <div class="promo-card-content">
+            <h3 class="promo-card-title">Premium Shirts</h3>
+            <a href="#shop" onclick="applyNavbarCategoryFilter('Men')" class="promo-card-link">Explore <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+        
+        <div class="promo-card">
+          <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=800" alt="Larre Dresses">
+          <div class="promo-card-overlay"></div>
+          <div class="promo-card-content">
+            <h3 class="promo-card-title">Mulberry Silks</h3>
+            <a href="#shop" onclick="applyNavbarCategoryFilter('Women')" class="promo-card-link">Explore <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <div class="promo-card">
+          <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&q=80&w=800" alt="Larre Accessories">
+          <div class="promo-card-overlay"></div>
+          <div class="promo-card-content">
+            <h3 class="promo-card-title">Statement Accessories</h3>
+            <a href="#shop" onclick="applyNavbarCategoryFilter('Accessories')" class="promo-card-link">Explore <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Curated Grid -->
+      <section class="products-section" style="padding-top: 0;">
+        <h2 class="luxury-heading center">Curated Essentials</h2>
+        <div class="products-grid" id="home-featured-grid">
+          <!-- Rendered dynamically from INITIAL_PRODUCTS -->
+        </div>
+        <div style="text-align: center; margin-top: 4rem;">
+          <button class="btn btn-outline" onclick="navigateTo('shop')">View Full Catalog</button>
+        </div>
+      </section>
+
+      <!-- Customer Testimonial slider -->
+      <section style="padding: 4rem 0; border-top: 1px solid var(--border-color); text-align: center;">
+        <h2 class="luxury-heading center">The Larre Experience</h2>
+        <div style="max-width: 800px; margin: 0 auto; padding: 2rem;">
+          <p style="font-family: var(--font-serif); font-size: 1.5rem; font-style: italic; color: var(--text-secondary); line-height: 1.8;">
+            "The fit and fabric selection are absolutely superb. Finding Giza cotton shirts with such impeccable tailoring details locally has been an absolute revelation. Larre has quickly become my go-to premium label."
+          </p>
+          <h4 style="margin-top: 1.5rem; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-gold);">Arjun V., Mumbai</h4>
+        </div>
+      </section>
+
+      <!-- Instagram Grid section -->
+      <section style="padding: 4rem 0; border-top: 1px solid var(--border-color);">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <h2 class="luxury-heading center">Styled on Instagram</h2>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase;">Tag @LarreOfficial on your stories to get featured</p>
+        </div>
+        <div class="insta-grid">
+          <div class="insta-item">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=400" alt="Larre style post">
+            <div class="insta-overlay"><i class="ri-instagram-line"></i></div>
+          </div>
+          <div class="insta-item">
+            <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&q=80&w=400" alt="Larre style post">
+            <div class="insta-overlay"><i class="ri-instagram-line"></i></div>
+          </div>
+          <div class="insta-item">
+            <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&q=80&w=400" alt="Larre style post">
+            <div class="insta-overlay"><i class="ri-instagram-line"></i></div>
+          </div>
+          <div class="insta-item">
+            <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&q=80&w=400" alt="Larre style post">
+            <div class="insta-overlay"><i class="ri-instagram-line"></i></div>
+          </div>
+          <div class="insta-item">
+            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=400" alt="Larre style post">
+            <div class="insta-overlay"><i class="ri-instagram-line"></i></div>
+          </div>
+          <div class="insta-item">
+            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80&w=400" alt="Larre style post">
+            <div class="insta-overlay"><i class="ri-instagram-line"></i></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Newsletter signup block -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-container">
+          <h2 class="luxury-heading center" style="margin-bottom: 0.5rem;">Join the Club</h2>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Subscribe to receive previews of editorial collection releases and private sales access.</p>
+          <form class="newsletter-input-group" onsubmit="subscribeNewsletter(event)">
+            <input type="email" placeholder="Your premium email address" class="newsletter-input" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       DYNAMIC VIEW: SHOP CATALOG PAGE (#shop)
+       ========================================== -->
+  <main id="view-shop" class="hidden">
+    <div class="container shop-layout">
+      <!-- Sidebar Filters column -->
+      <aside class="shop-sidebar">
+        <!-- Search bar filter -->
+        <div class="filter-group">
+          <h3 class="filter-title">Search Catalog</h3>
+          <input type="text" id="search-input-main" placeholder="Keyword lookup..." class="input-field" style="width: 100%;">
+        </div>
+
+        <!-- Category filter -->
+        <div class="filter-group">
+          <h3 class="filter-title">Department</h3>
+          <div class="filter-list">
+            <label class="checkbox-container">
+              <input type="checkbox" class="category-filter-input" value="Men">
+              <span class="checkbox-custom"></span>
+              Men Collections
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" class="category-filter-input" value="Women">
+              <span class="checkbox-custom"></span>
+              Women Collections
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" class="category-filter-input" value="Accessories">
+              <span class="checkbox-custom"></span>
+              Fine Accessories
+            </label>
+          </div>
+        </div>
+
+        <!-- Sizes filter -->
+        <div class="filter-group">
+          <h3 class="filter-title">Select Sizes</h3>
+          <div class="size-pills">
+            <div class="size-pill size-filter-pill" data-size="S">S</div>
+            <div class="size-pill size-filter-pill" data-size="M">M</div>
+            <div class="size-pill size-filter-pill" data-size="L">L</div>
+            <div class="size-pill size-filter-pill" data-size="XL">XL</div>
+            <div class="size-pill size-filter-pill" data-size="XXL">XXL</div>
+            <div class="size-pill size-filter-pill" data-size="30">30</div>
+            <div class="size-pill size-filter-pill" data-size="32">32</div>
+            <div class="size-pill size-filter-pill" data-size="34">34</div>
+            <div class="size-pill size-filter-pill" data-size="36">36</div>
+          </div>
+        </div>
+
+        <!-- Color filter -->
+        <div class="filter-group">
+          <h3 class="filter-title">Colors</h3>
+          <div class="color-swatches">
+            <div class="color-swatch color-filter-swatch" style="background-color: #F5F2EB;" title="Ecru" data-color="Ecru"></div>
+            <div class="color-swatch color-filter-swatch" style="background-color: #8F9779;" title="Sage" data-color="Sage"></div>
+            <div class="color-swatch color-filter-swatch" style="background-color: #363636;" title="Charcoal" data-color="Charcoal"></div>
+            <div class="color-swatch color-filter-swatch" style="background-color: #1A1A1A;" title="Black" data-color="Black"></div>
+            <div class="color-swatch color-filter-swatch" style="background-color: #1D2A44;" title="Navy" data-color="Navy"></div>
+            <div class="color-swatch color-filter-swatch" style="background-color: #FFFDF9;" title="Cream" data-color="Cream"></div>
+            <div class="color-swatch color-filter-swatch" style="background-color: #8B5A2B;" title="Tan" data-color="Tan"></div>
+            <div class="color-swatch color-filter-swatch" style="background-color: #D4AF37;" title="Gold" data-color="Gold"></div>
+            <div class="color-swatch color-filter-swatch" style="background-color: #D2B48C;" title="Sand" data-color="Sand"></div>
+            <div class="color-swatch color-filter-swatch" style="background-color: #556B2F;" title="Olive Green" data-color="Olive Green"></div>
+            <div class="color-swatch color-filter-swatch" style="background-color: #0F52BA;" title="Emerald Green" data-color="Emerald Green"></div>
+            <div class="color-swatch color-filter-swatch" style="background-color: #C19A6B;" title="Camel" data-color="Camel"></div>
+          </div>
+        </div>
+
+        <!-- Price Range filter -->
+        <div class="filter-group">
+          <div class="filter-title">
+            <span>Max Price</span>
+            <span id="price-slider-value" style="color: var(--color-gold);">₹25,000</span>
+          </div>
+          <input type="range" id="price-range-slider" min="1000" max="25000" step="500" value="25000" style="width: 100%; accent-color: var(--color-gold);">
+          <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem;">
+            <span>₹1,000</span>
+            <span>₹25,000</span>
+          </div>
+        </div>
+
+        <button class="btn btn-outline" style="width: 100%; margin-top: 1rem;" onclick="clearAllFilters()">Reset Filters</button>
+      </aside>
+
+      <!-- Shop catalog grid list -->
+      <section class="shop-content">
+        <!-- Toolbar header -->
+        <div class="shop-toolbar">
+          <div class="results-count" id="results-count-value">0 products</div>
+          
+          <div class="sort-select-wrapper">
+            <span style="font-size: 0.85rem; color: var(--text-secondary);">Sort By:</span>
+            <select class="sort-select" id="shop-sort-select">
+              <option value="featured">Featured Essentials</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Top Customer Rated</option>
+              <option value="newest">New Arrivals First</option>
+            </select>
+
+            <!-- Layout switch -->
+            <div class="view-modes">
+              <button class="view-btn" id="grid-mode-2" title="2 Column Editorial Grid">
+                <i class="ri-grid-fill" style="transform: rotate(90deg);"></i>
+              </button>
+              <button class="view-btn active" id="grid-mode-4" title="4 Column Grid">
+                <i class="ri-grid-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Products Grid container -->
+        <div class="products-grid" id="shop-products-grid">
+          <!-- Populated from shop.js -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ==========================================
+       DYNAMIC VIEW: PRODUCT DETAILS PAGE (#product/:id)
+       ========================================== -->
+  <main id="view-product" class="hidden">
+    <!-- Populated dynamically via renderProductDetailsPage() inside app.js -->
+  </main>
+
+  <!-- ==========================================
+       DYNAMIC VIEW: SECURE CHECKOUT PAGE (#checkout)
+       ========================================== -->
+  <main id="view-checkout" class="hidden">
+    <div class="container">
+      <div class="checkout-layout">
+        <!-- Shipping Address Details Form -->
+        <section>
+          <h2 class="checkout-section-title">Shipping & Delivery</h2>
+          
+          <form id="checkout-form">
+            <div class="form-grid">
+              <div class="input-group form-full">
+                <label class="input-label" for="chk-name">Full Customer Name *</label>
+                <input type="text" id="chk-name" class="input-field" placeholder="E.g. Arman Sheikh" required>
+              </div>
+              <div class="input-group form-full">
+                <label class="input-label" for="chk-email">Email Address *</label>
+                <input type="email" id="chk-email" class="input-field" placeholder="arman@example.com" required>
+              </div>
+              <div class="input-group form-full">
+                <label class="input-label" for="chk-address">Street Address *</label>
+                <input type="text" id="chk-address" class="input-field" placeholder="Flat No., Building Name, Street" required>
+              </div>
+              <div class="input-group">
+                <label class="input-label" for="chk-city">Town / City *</label>
+                <input type="text" id="chk-city" class="input-field" placeholder="Mumbai" required>
+              </div>
+              <div class="input-group">
+                <label class="input-label" for="chk-state">State *</label>
+                <input type="text" id="chk-state" class="input-field" placeholder="Maharashtra" required>
+              </div>
+              <div class="input-group">
+                <label class="input-label" for="chk-zip">Postal ZIP Code *</label>
+                <input type="text" id="chk-zip" class="input-field" placeholder="400001" required>
+              </div>
+              <div class="input-group">
+                <label class="input-label" for="chk-phone">Mobile Phone *</label>
+                <input type="text" id="chk-phone" class="input-field" placeholder="+91 9999999999" required>
+              </div>
+            </div>
+
+            <h2 class="checkout-section-title" style="margin-top: 3rem;">Payment Methods</h2>
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;">
+              <label class="checkbox-container" style="padding: 1rem; border: 1px solid var(--border-color); display: flex;">
+                <input type="radio" name="payment-method" value="razorpay" checked>
+                <span class="checkbox-custom" style="border-radius: 50%;"></span>
+                <div style="margin-left: 0.5rem;">
+                  <div style="font-weight: 600; font-size: 0.9rem;">Razorpay Secure Checkout</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Pay via UPI, Credit/Debit cards, Net Banking</div>
+                </div>
+              </label>
+
+              <label class="checkbox-container" style="padding: 1rem; border: 1px solid var(--border-color); display: flex;">
+                <input type="radio" name="payment-method" value="stripe">
+                <span class="checkbox-custom" style="border-radius: 50%;"></span>
+                <div style="margin-left: 0.5rem;">
+                  <div style="font-weight: 600; font-size: 0.9rem;">Stripe International Payments</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Visa, MasterCard, Amex billing options</div>
+                </div>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-solid" style="width: 100%; height: 54px; letter-spacing: 0.25em;">Proceed to Pay Securely</button>
+          </form>
+        </section>
+
+        <!-- Right Side Checkout Order Summary panel -->
+        <aside>
+          <div class="summary-card">
+            <h3 style="font-family: var(--font-serif); font-size: 1.25rem; text-transform: uppercase; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Bag Summary</h3>
+            
+            <div id="checkout-items-list" style="max-height: 300px; overflow-y: auto; margin-bottom: 1.5rem;">
+              <!-- Rendered from app.js -->
+            </div>
+
+            <div class="summary-row">
+              <span>Bag Subtotal</span>
+              <span id="chk-subtotal">₹0</span>
+            </div>
+            <div class="summary-row hidden" id="chk-discount-row" style="color: var(--color-gold);">
+              <span>Privilege Discount (10%)</span>
+              <span id="chk-discount">-₹0</span>
+            </div>
+            <div class="summary-row">
+              <span>Luxury Shipping Courier</span>
+              <span style="color: var(--color-gold); font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase;">Complimentary</span>
+            </div>
+            
+            <div class="summary-row total">
+              <span>Grand Total</span>
+              <span id="chk-total" style="color: var(--color-gold);">₹0</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================
+       DYNAMIC VIEW: ADMIN CONTROL PANEL (#admin)
+       ========================================== -->
+  <main id="view-admin" class="hidden">
+    <div class="admin-layout">
+      <!-- Admin Sidebar switcher tabs -->
+      <aside class="admin-sidebar">
+        <div class="admin-menu-item active" onclick="showAdminSection('analytics', this)">
+          <i class="ri-dashboard-3-line"></i> Overview Stats
+        </div>
+        <div class="admin-menu-item" onclick="showAdminSection('products', this)">
+          <i class="ri-shirt-line"></i> Inventory Products
+        </div>
+        <div class="admin-menu-item" onclick="showAdminSection('orders', this)">
+          <i class="ri-file-list-3-line"></i> Order Tracking
+        </div>
+      </aside>
+
+      <!-- Admin content viewport -->
+      <section class="admin-content">
+        
+        <!-- SECTION: STATS OVERVIEW -->
+        <div id="admin-sec-analytics">
+          <div class="admin-header-row">
+            <h2 class="luxury-heading" style="margin-bottom: 0;">Analytics Overview</h2>
+          </div>
+          
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <span class="kpi-title">Gross Revenue</span>
+              <div class="kpi-value" id="kpi-revenue">₹0</div>
+              <span class="kpi-trend"><i class="ri-arrow-up-line"></i> +18.4% this month</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-title">Orders Processed</span>
+              <div class="kpi-value" id="kpi-orders">0</div>
+              <span class="kpi-trend"><i class="ri-arrow-up-line"></i> +12.3% this month</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-title">Average Order Value</span>
+              <div class="kpi-value" id="kpi-aov">₹0</div>
+              <span class="kpi-trend" style="color: var(--text-muted);">Stable trend</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-title">Low Stock Alert</span>
+              <div class="kpi-value" id="kpi-stock">0</div>
+              <span class="kpi-trend" style="color: var(--text-muted);">Items &lt; 5 stock</span>
+            </div>
+          </div>
+
+          <!-- Quick Charts placeholders -->
+          <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); padding: 2.5rem; margin-top: 2rem;">
+            <h3 style="font-family: var(--font-serif); font-size: 1.25rem; text-transform: uppercase; margin-bottom: 1.5rem;">Sales Performance Activity</h3>
+            <!-- Luxury Simulated CSS/HTML chart representation -->
+            <div style="display: flex; align-items: flex-end; justify-content: space-between; height: 200px; padding-top: 1rem; border-bottom: 1px solid var(--border-color); border-left: 1px solid var(--border-color); padding-left: 1rem;">
+              <div style="width: 10%; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                <div style="width: 24px; height: 80px; background-color: var(--color-gold);"></div>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Feb</span>
+              </div>
+              <div style="width: 10%; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                <div style="width: 24px; height: 110px; background-color: var(--color-gold);"></div>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Mar</span>
+              </div>
+              <div style="width: 10%; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                <div style="width: 24px; height: 95px; background-color: var(--color-gold);"></div>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Apr</span>
+              </div>
+              <div style="width: 10%; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                <div style="width: 24px; height: 140px; background-color: var(--color-gold);"></div>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">May</span>
+              </div>
+              <div style="width: 10%; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                <div style="width: 24px; height: 175px; background-color: var(--color-black);"></div>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Jun (Live)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION: PRODUCT INVENTORY CRUD -->
+        <div id="admin-sec-products" class="hidden">
+          <div class="admin-header-row">
+            <h2 class="luxury-heading" style="margin-bottom: 0;">Inventory Management</h2>
+            <button class="btn btn-solid" onclick="openAddProductModal()"><i class="ri-add-line"></i> Add New Product</button>
+          </div>
+
+          <div class="table-card">
+            <div class="table-responsive">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>SNo</th>
+                    <th>Product details</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Stock status</th>
+                    <th>Quick Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="admin-products-table-body">
+                  <!-- Rendered dynamically via admin.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION: ORDER TRACKING -->
+        <div id="admin-sec-orders" class="hidden">
+          <div class="admin-header-row">
+            <h2 class="luxury-heading" style="margin-bottom: 0;">Order Tracking Dashboard</h2>
+          </div>
+
+          <div class="table-card">
+            <div class="table-responsive">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Order Date</th>
+                    <th>Quantity</th>
+                    <th>Grand Total</th>
+                    <th>Status Tracker</th>
+                  </tr>
+                </thead>
+                <tbody id="admin-orders-table-body">
+                  <!-- Rendered dynamically via admin.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer style="background-color: var(--color-black); color: var(--color-white); padding: 5rem 0 3rem 0; border-top: 1px solid rgba(255,255,255,0.05);">
+    <div class="container" style="display: grid; grid-template-columns: 1.5fr repeat(3, 1fr); gap: 3rem; margin-bottom: 4rem;">
+      <div>
+        <h2 style="font-family: var(--font-serif); font-size: 1.8rem; letter-spacing: 0.1em; color: var(--color-white); margin-bottom: 1.5rem;">LA<span>RRE</span></h2>
+        <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem; margin-bottom: 1.5rem; max-width: 280px;">A luxurious, minimalistic label inspired by premium textures and editorial designs. Handcrafted essentials for the modern lifestyle.</p>
+        <div style="display: flex; gap: 1rem; font-size: 1.25rem;">
+          <a href="#" style="color: rgba(255,255,255,0.6);" hover="color: var(--color-gold)"><i class="ri-instagram-line"></i></a>
+          <a href="#" style="color: rgba(255,255,255,0.6);"><i class="ri-facebook-box-line"></i></a>
+          <a href="#" style="color: rgba(255,255,255,0.6);"><i class="ri-pinterest-line"></i></a>
+          <a href="#" style="color: rgba(255,255,255,0.6);"><i class="ri-twitter-x-line"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-gold); margin-bottom: 1.5rem;">Shop Collections</h4>
+        <ul style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem; color: rgba(255,255,255,0.6);">
+          <li><a href="#shop" onclick="applyNavbarCategoryFilter('Men')">Men Apparel</a></li>
+          <li><a href="#shop" onclick="applyNavbarCategoryFilter('Women')">Women Collection</a></li>
+          <li><a href="#shop" onclick="applyNavbarCategoryFilter('Accessories')">Fine Accessories</a></li>
+          <li><a href="#shop" onclick="navigateTo('shop')">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-gold); margin-bottom: 1.5rem;">Privilege Services</h4>
+        <ul style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem; color: rgba(255,255,255,0.6);">
+          <li><a href="#" onclick="showToast('Bespoke custom fitting service')">Bespoke Fit Consultations</a></li>
+          <li><a href="#" onclick="showToast('Privilege club services')">Larre Privilege Club</a></li>
+          <li><a href="#" onclick="showToast('Corporate gifting packages')">Corporate Gifting</a></li>
+          <li><a href="#" onclick="showToast('Packaging demo')">Signature Gift Wrapping</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-gold); margin-bottom: 1.5rem;">Customer Care</h4>
+        <ul style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem; color: rgba(255,255,255,0.6);">
+          <li><a href="#" onclick="showToast('Complimentary shipping details')">Express Shipping Rates</a></li>
+          <li><a href="#" onclick="showToast('Returns page')">Returns & Exchange Policies</a></li>
+          <li><a href="#" onclick="showToast('Order lookup')">Track Package Delivery</a></li>
+          <li><a href="#" onclick="showToast('Contact desk')">Reach Customer Desk</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container" style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; font-size: 0.8rem; color: rgba(255,255,255,0.4);">
+      <p>© 2026 LARRE E-commerce Ltd. All Rights Reserved.</p>
+      <div style="display: flex; gap: 1.5rem;">
+        <a href="#" onclick="showToast('Privacy Policy')">Privacy Policy</a>
+        <a href="#" onclick="showToast('Terms of Service')">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       DRAWERS (SHOPPING BAG & WISHLIST) OVERLAY
+       ========================================== -->
+  <div class="drawer-backdrop" id="drawer-overlay" onclick="closeAllDrawers()">
+    <!-- SHOPPING BAG DRAWER -->
+    <div class="drawer" id="cart-drawer" onclick="event.stopPropagation()">
+      <div class="drawer-header">
+        <h3 class="drawer-title">Shopping Bag (<span class="cart-count-badge">0</span>)</h3>
+        <span class="drawer-close" onclick="closeAllDrawers()"><i class="ri-close-line"></i></span>
+      </div>
+      
+      <!-- Cart items rendered dynamically -->
+      <div class="drawer-body" id="cart-drawer-list">
+        <!-- Rendered from cart.js -->
+      </div>
+      
+      <div class="drawer-footer">
+        <div class="summary-row">
+          <span>Bag Subtotal</span>
+          <span id="cart-subtotal-val">₹0</span>
+        </div>
+        <div class="summary-row hidden" id="cart-discount-row" style="color: var(--color-gold);">
+          <span>Promo Code Discount</span>
+          <span id="cart-discount-val">-₹0</span>
+        </div>
+        <div class="summary-row" style="font-weight: 600; border-top: 1px solid var(--border-color); padding-top: 0.75rem; margin-top: 0.5rem; font-size: 1.1rem;">
+          <span>Grand Total</span>
+          <span id="cart-total-val" style="color: var(--color-gold);">₹0</span>
+        </div>
+        
+        <!-- Promo Coupon Application Box -->
+        <div style="display: flex; margin-top: 1rem; margin-bottom: 1.5rem; gap: 0.5rem;">
+          <input type="text" id="promo-code-input" placeholder="Coupon Code (e.g. LUXURY10)" class="input-field" style="flex-grow: 1; height: 42px; font-size: 0.8rem;">
+          <button class="btn btn-outline" style="padding: 0 1rem; height: 42px; font-size: 0.75rem;" onclick="applyPromoCode(document.getElementById('promo-code-input').value)">Apply</button>
+        </div>
+
+        <button class="btn btn-solid" id="checkout-drawer-btn" style="width: 100%; height: 50px; letter-spacing: 0.2em;" onclick="closeAllDrawers(); navigateTo('checkout');">Secure Checkout</button>
+      </div>
+    </div>
+
+    <!-- WISHLIST DRAWER -->
+    <div class="drawer" id="wishlist-drawer" onclick="event.stopPropagation()">
+      <div class="drawer-header">
+        <h3 class="drawer-title">Wishlist</h3>
+        <span class="drawer-close" onclick="closeAllDrawers()"><i class="ri-close-line"></i></span>
+      </div>
+      <div class="drawer-body" id="wishlist-drawer-list">
+        <!-- Rendered from cart.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODALS OVERLAYS
+       ========================================== -->
+  <!-- QUICK SHOP MODAL -->
+  <div class="modal-backdrop" id="quick-add-modal">
+    <div class="modal" style="width: 550px;">
+      <span class="modal-close" onclick="closeModal('quick-add-modal')"><i class="ri-close-line"></i></span>
+      <h3 style="font-family: var(--font-serif); font-size: 1.25rem; text-transform: uppercase; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Quick Shopping</h3>
+      <div id="quick-add-modal-content">
+        <!-- Rendered dynamically from app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT CRUD MODAL (ADMIN CREATE/EDIT) -->
+  <div class="modal-backdrop" id="product-crud-modal">
+    <div class="modal" style="width: 550px;">
+      <span class="modal-close" onclick="closeModal('product-crud-modal')"><i class="ri-close-line"></i></span>
+      <h3 style="font-family: var(--font-serif); font-size: 1.25rem; text-transform: uppercase; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;" id="product-modal-title">Add Luxury Product</h3>
+      <form id="product-form" onsubmit="saveProductSubmit(event)">
+        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div class="form-grid" style="margin-bottom: 0;">
+            <div class="input-group">
+              <label class="input-label" for="prod-name">Product Name *</label>
+              <input type="text" id="prod-name" class="input-field" placeholder="E.G. SILK SHIRT" required>
+            </div>
+            <div class="input-group">
+              <label class="input-label" for="prod-category">Department *</label>
+              <select id="prod-category" class="input-field" required>
+                <option value="Men">Men</option>
+                <option value="Women">Women</option>
+                <option value="Accessories">Accessories</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-grid" style="margin-bottom: 0;">
+            <div class="input-group">
+              <label class="input-label" for="prod-subcategory">Category/Type *</label>
+              <input type="text" id="prod-subcategory" class="input-field" placeholder="E.g. Shirts" required>
+            </div>
+            <div class="input-group">
+              <label class="input-label" for="prod-stock">Initial Stock *</label>
+              <input type="number" id="prod-stock" class="input-field" placeholder="10" min="0" required>
+            </div>
+          </div>
+          <div class="form-grid" style="margin-bottom: 0;">
+            <div class="input-group">
+              <label class="input-label" for="prod-price">Retail Price *</label>
+              <input type="number" id="prod-price" class="input-field" placeholder="3900" min="0" required>
+            </div>
+            <div class="input-group">
+              <label class="input-label" for="prod-original-price">Original Price</label>
+              <input type="number" id="prod-original-price" class="input-field" placeholder="4900" min="0">
+            </div>
+          </div>
+          <div class="input-group">
+            <label class="input-label" for="prod-image">Image URL *</label>
+            <input type="text" id="prod-image" class="input-field" placeholder="https://unsplash.com/..." required>
+          </div>
+          <div class="input-group">
+            <label class="input-label" for="prod-desc">Description *</label>
+            <textarea id="prod-desc" class="input-field" style="height: 100px; padding: 0.75rem;" placeholder="Premium luxury fabrics..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-solid" style="width: 100%; height: 48px; margin-top: 1rem;">Save Product Changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- AUTHENTICATION DIALOG (LOGIN / REGISTER) -->
+  <div class="modal-backdrop" id="auth-modal">
+    <div class="modal" style="width: 450px; padding: 3rem 2.5rem;">
+      <span class="modal-close" onclick="closeModal('auth-modal')"><i class="ri-close-line"></i></span>
+      
+      <!-- Tab Header Buttons -->
+      <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem;">
+        <button id="tab-btn-login" style="font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.1em; padding-bottom: 0.5rem; font-weight: 600; border-bottom: 2px solid var(--color-gold);" onclick="toggleAuthTabs('login')">Login</button>
+        <button id="tab-btn-register" style="font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.1em; padding-bottom: 0.5rem; font-weight: 600;" onclick="toggleAuthTabs('register')">Register</button>
+      </div>
+
+      <!-- LOGIN FORM -->
+      <form id="login-tab-form" onsubmit="handleLogin(event)">
+        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div class="input-group">
+            <label class="input-label">Email Address</label>
+            <input type="email" id="login-email" class="input-field" placeholder="customer@example.com" required>
+          </div>
+          <div class="input-group">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <label class="input-label">Password</label>
+              <a href="#" style="font-size: 0.75rem; color: var(--color-gold); text-decoration: underline;" onclick="showToast('Reset password link sent to email')">Forgot Password?</a>
+            </div>
+            <input type="password" id="login-pass" class="input-field" placeholder="••••••••" required>
+          </div>
+          <button type="submit" class="btn btn-solid" style="width: 100%; height: 48px; margin-top: 1rem;">Sign In</button>
+        </div>
+      </form>
+
+      <!-- REGISTER FORM -->
+      <form id="register-tab-form" class="hidden" onsubmit="handleRegister(event)">
+        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div class="input-group">
+            <label class="input-label">Email Address</label>
+            <input type="email" id="register-email" class="input-field" placeholder="customer@example.com" required>
+          </div>
+          <div class="input-group">
+            <label class="input-label">Password</label>
+            <input type="password" id="register-pass" class="input-field" placeholder="Create robust password" required>
+          </div>
+          <label class="checkbox-container">
+            <input type="checkbox" required>
+            <span class="checkbox-custom"></span>
+            I accept Larre Terms & Privacy Policies
+          </label>
+          <button type="submit" class="btn btn-solid" style="width: 100%; height: 48px; margin-top: 1rem;">Register Account</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- OTP SIMULATION MODAL -->
+  <div class="modal-backdrop" id="otp-modal">
+    <div class="modal" style="width: 400px; text-align: center; padding: 3rem 2rem;">
+      <i class="ri-mail-send-line" style="font-size: 3rem; color: var(--color-gold); display: block; margin-bottom: 1.5rem;"></i>
+      <h3 style="font-family: var(--font-serif); font-size: 1.4rem; text-transform: uppercase; margin-bottom: 0.5rem;">Verify Email Address</h3>
+      <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 2rem;">A 6-digit verification code has been dispatched. Enter the code below to complete registrations.</p>
+      
+      <form onsubmit="verifyOTP(event)">
+        <input type="text" id="otp-code" class="input-field" placeholder="E.g. 123456" maxlength="6" style="text-align: center; font-size: 1.5rem; letter-spacing: 0.25em; height: 54px; margin-bottom: 1.5rem; width: 100%;" required>
+        <button type="submit" class="btn btn-solid" style="width: 100%; height: 48px;">Complete Verification</button>
+      </form>
+      <a href="#" style="font-size: 0.8rem; color: var(--color-gold); text-decoration: underline; display: block; margin-top: 1.5rem;" onclick="showToast('OTP resubmitted')">Resend Code</a>
+    </div>
+  </div>
+
+  <!-- PAYMENT PROCESS SPINNER MODAL -->
+  <div class="modal-backdrop" id="payment-process-modal">
+    <div class="modal" style="width: 350px; text-align: center; padding: 4rem 2rem;">
+      <div style="border: 3px solid var(--border-color); border-top: 3px solid var(--color-gold); border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 0 auto 2rem auto;"></div>
+      <h3 style="font-family: var(--font-serif); font-size: 1.25rem; text-transform: uppercase; margin-bottom: 0.5rem;">Securing Transaction</h3>
+      <p style="font-size: 0.85rem; color: var(--text-secondary);">Connecting to payment gateway encryption servers. Do not close browser windows.</p>
+    </div>
+    <style>
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </div>
+
+  <!-- ORDER SUCCESS CONFIRMATION MODAL -->
+  <div class="modal-backdrop" id="order-success-modal">
+    <div class="modal" style="width: 450px; text-align: center; padding: 4rem 3rem;">
+      <i class="ri-checkbox-circle-line" style="font-size: 4.5rem; color: var(--color-gold); display: block; margin-bottom: 1.5rem;"></i>
+      <h2 style="font-family: var(--font-serif); font-size: 1.8rem; text-transform: uppercase; margin-bottom: 0.5rem;">Order Confirmed</h2>
+      <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1rem;">Your checkout payment was processed successfully. Thank you for shopping with us.</p>
+      
+      <div style="background-color: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 1rem; margin-bottom: 2rem;">
+        <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">Receipt Order ID</span>
+        <div style="font-size: 1.25rem; font-weight: 700; font-family: monospace; color: var(--text-primary);" id="success-order-id">ORD-XXXX</div>
+      </div>
+
+      <div style="display: flex; gap: 1rem; justify-content: center;">
+        <button class="btn btn-solid" style="flex-grow: 1;" onclick="closeModal('order-success-modal'); navigateTo('home')">Home Page</button>
+        <button class="btn btn-outline" style="flex-grow: 1;" onclick="closeModal('order-success-modal'); navigateTo('admin')">Admin Tracking</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       SCRIPTS IMPORT LAYER
+       ========================================== -->
+  <script src="data/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/shop.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Section view switcher script for Admin Page -->
+  <script>
+    function showAdminSection(section, element) {
+      // Toggle sidebar active highlights
+      document.querySelectorAll(".admin-sidebar .admin-menu-item").forEach(item => {
+        item.classList.remove("active");
+      });
+      element.classList.add("active");
+
+      // Toggle views
+      const sections = ["analytics", "products", "orders"];
+      sections.forEach(s => {
+        const secEl = document.getElementById(`admin-sec-${s}`);
+        if (secEl) {
+          if (s === section) {
+            secEl.classList.remove("hidden");
+          } else {
+            secEl.classList.add("hidden");
+          }
+        }
+      });
+      
+      // Refresh calculations on click
+      if (section === 'analytics') calculateKPIs();
+      else if (section === 'products') renderAdminProducts();
+      else if (section === 'orders') renderAdminOrders();
+    }
+  </script>
+</body>
+</html>
